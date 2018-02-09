@@ -227,7 +227,7 @@ The navbar has been entirely rewritten in flexbox with improved support for alig
 - `.navbar-default` is now `.navbar-light`, though `.navbar-dark` remains the same. **One of these is required on each navbar.** However, these classes no longer set `background-color`s; instead they essentially only affect `color`.
 - Navbars now require a background declaration of some kind. Choose from our background utilities (`.bg-*`) or set your own with the light/inverse classes above [for mad customization]({{ site.baseurl }}/docs/{{ site.docs_version }}/components/navbar/#color-schemes).
 - Given flexbox styles, navbars can now use flexbox utilities for easy alignment options.
-- `.navbar-toggle` is now `.navbar-toggler` and has different styles and inner markup (no more three `<span>`s).
+- `.navbar-toggler` is now `.navbar-togglerr` and has different styles and inner markup (no more three `<span>`s).
 - Dropped the `.navbar-form` class entirely. It's no longer necessary; instead, just use `.form-inline` and apply margin utilities as necessary.
 - Navbars no longer include `margin-bottom` or `border-radius` by default. Use utilities as necessary.
 - All examples featuring navbars have been updated to include new markup.

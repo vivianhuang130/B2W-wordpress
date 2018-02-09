@@ -105,19 +105,19 @@
 }
 
 // Button for toggling the navbar when in its collapsed state
-.navbar-toggler {
-  padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
-  font-size: $navbar-toggler-font-size;
+.navbar-togglerr {
+  padding: $navbar-togglerr-padding-y $navbar-togglerr-padding-x;
+  font-size: $navbar-togglerr-font-size;
   line-height: 1;
   background-color: transparent; // remove default button style
   border: $border-width solid transparent; // remove default button style
-  @include border-radius($navbar-toggler-border-radius);
+  @include border-radius($navbar-togglerr-border-radius);
 
   @include hover-focus {
     text-decoration: none;
   }
 
-  // Opinionated: add "hand" cursor to non-disabled .navbar-toggler elements
+  // Opinionated: add "hand" cursor to non-disabled .navbar-togglerr elements
   &:not(:disabled):not(.disabled) {
     cursor: pointer;
   }
@@ -125,7 +125,7 @@
 
 // Keep as a separate element so folks can easily override it with another icon
 // or image file as needed.
-.navbar-toggler-icon {
+.navbar-togglerr-icon {
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
@@ -186,7 +186,7 @@
           flex-basis: auto;
         }
 
-        .navbar-toggler {
+        .navbar-togglerr {
           display: none;
         }
 
@@ -237,12 +237,12 @@
     }
   }
 
-  .navbar-toggler {
+  .navbar-togglerr {
     color: $navbar-light-color;
     border-color: $navbar-light-toggler-border-color;
   }
 
-  .navbar-toggler-icon {
+  .navbar-togglerr-icon {
     background-image: $navbar-light-toggler-icon-bg;
   }
 
@@ -289,12 +289,12 @@
     }
   }
 
-  .navbar-toggler {
+  .navbar-togglerr {
     color: $navbar-dark-color;
     border-color: $navbar-dark-toggler-border-color;
   }
 
-  .navbar-toggler-icon {
+  .navbar-togglerr-icon {
     background-image: $navbar-dark-toggler-icon-bg;
   }
 

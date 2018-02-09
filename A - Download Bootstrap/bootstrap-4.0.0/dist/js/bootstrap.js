@@ -1919,9 +1919,9 @@ var Modal = function ($$$1) {
     DIALOG: '.modal-dialog',
     DATA_TOGGLE: '[data-toggle="modal"]',
     DATA_DISMISS: '[data-dismiss="modal"]',
-    FIXED_CONTENT: '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
+    FIXED_CONTENT: '.navbar-fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
     STICKY_CONTENT: '.sticky-top',
-    NAVBAR_TOGGLER: '.navbar-toggler'
+    NAVBAR_TOGGLER: '.navbar-togglerr'
     /**
      * ------------------------------------------------------------------------
      * Class Definition
@@ -2295,7 +2295,7 @@ var Modal = function ($$$1) {
           var actualMargin = $$$1(element)[0].style.marginRight;
           var calculatedMargin = $$$1(element).css('margin-right');
           $$$1(element).data('margin-right', actualMargin).css('margin-right', parseFloat(calculatedMargin) - _this9._scrollbarWidth + "px");
-        }); // Adjust navbar-toggler margin
+        }); // Adjust navbar-togglerr margin
 
         $$$1(Selector.NAVBAR_TOGGLER).each(function (index, element) {
           var actualMargin = $$$1(element)[0].style.marginRight;
@@ -2317,7 +2317,7 @@ var Modal = function ($$$1) {
         if (typeof padding !== 'undefined') {
           $$$1(element).css('padding-right', padding).removeData('padding-right');
         }
-      }); // Restore sticky content and navbar-toggler margin
+      }); // Restore sticky content and navbar-togglerr margin
 
       $$$1(Selector.STICKY_CONTENT + ", " + Selector.NAVBAR_TOGGLER).each(function (index, element) {
         var margin = $$$1(element).data('margin-right');

@@ -439,7 +439,7 @@ $(function () {
   QUnit.test('should adjust the inline padding of fixed elements when opening and restore when closing', function (assert) {
     assert.expect(2)
     var done = assert.async()
-    var $element = $('<div class="fixed-top"></div>').appendTo('#qunit-fixture')
+    var $element = $('<div class="navbar-fixed-top"></div>').appendTo('#qunit-fixture')
     var originalPadding = $element.css('padding-right')
 
     $('<div id="modal-test"/>')
@@ -461,7 +461,7 @@ $(function () {
   QUnit.test('should store the original padding of fixed elements in data-padding-right before showing', function (assert) {
     assert.expect(2)
     var done = assert.async()
-    var $element = $('<div class="fixed-top"></div>').appendTo('#qunit-fixture')
+    var $element = $('<div class="navbar-fixed-top"></div>').appendTo('#qunit-fixture')
     var originalPadding = '0px'
     $element.css('padding-right', originalPadding)
 
@@ -520,32 +520,32 @@ $(function () {
       .bootstrapModal('show')
   })
 
-  QUnit.test('should adjust the inline margin of the navbar-toggler when opening and restore when closing', function (assert) {
+  QUnit.test('should adjust the inline margin of the navbar-togglerr when opening and restore when closing', function (assert) {
     assert.expect(2)
     var done = assert.async()
-    var $element = $('<div class="navbar-toggler"></div>').appendTo('#qunit-fixture')
+    var $element = $('<div class="navbar-togglerr"></div>').appendTo('#qunit-fixture')
     var originalMargin = $element.css('margin-right')
 
     $('<div id="modal-test"/>')
       .on('hidden.bs.modal', function () {
         var currentMargin = $element.css('margin-right')
-        assert.strictEqual(currentMargin, originalMargin, 'navbar-toggler margin should be reset after closing')
+        assert.strictEqual(currentMargin, originalMargin, 'navbar-togglerr margin should be reset after closing')
         $element.remove()
         done()
       })
       .on('shown.bs.modal', function () {
         var expectedMargin = parseFloat(originalMargin) + $(this).getScrollbarWidth() + 'px'
         var currentMargin = $element.css('margin-right')
-        assert.strictEqual(currentMargin, expectedMargin, 'navbar-toggler margin should be adjusted while opening')
+        assert.strictEqual(currentMargin, expectedMargin, 'navbar-togglerr margin should be adjusted while opening')
         $(this).bootstrapModal('hide')
       })
       .bootstrapModal('show')
   })
 
-  QUnit.test('should store the original margin of the navbar-toggler in data-margin-right before showing', function (assert) {
+  QUnit.test('should store the original margin of the navbar-togglerr in data-margin-right before showing', function (assert) {
     assert.expect(2)
     var done = assert.async()
-    var $element = $('<div class="navbar-toggler"></div>').appendTo('#qunit-fixture')
+    var $element = $('<div class="navbar-togglerr"></div>').appendTo('#qunit-fixture')
     var originalMargin = '0px'
     $element.css('margin-right', originalMargin)
 
@@ -556,7 +556,7 @@ $(function () {
         done()
       })
       .on('shown.bs.modal', function () {
-        assert.strictEqual($element.data('margin-right'), originalMargin, 'original navbar-toggler margin should be stored in data-margin-right')
+        assert.strictEqual($element.data('margin-right'), originalMargin, 'original navbar-togglerr margin should be stored in data-margin-right')
         $(this).bootstrapModal('hide')
       })
       .bootstrapModal('show')

@@ -23,7 +23,7 @@ Quick positioning classes are available, though they are not responsive.
 Position an element at the top of the viewport, from edge to edge. Be sure you understand the ramifications of fixed position in your project; you may need to add aditional CSS.
 
 {% highlight html %}
-<div class="fixed-top">...</div>
+<div class="navbar-fixed-top">...</div>
 {% endhighlight %}
 
 ## Fixed bottom

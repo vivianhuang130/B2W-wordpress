@@ -394,7 +394,7 @@ body {
 	background: url('/wp-content/themes/bootstrap2wordpress/assets/img/tile.jpg') top left repeat;
 }
 
-.logged-in .navbar-fixed-top {
+.logged-in .fixed-top {
 	top: 32px;
 }
 
@@ -1032,7 +1032,7 @@ button[type="submit"]:hover {
 
 /* Fix the top margin when logged in */
 @media screen and (max-width: 782px) {
-	.logged-in .navbar-fixed-top {
+	.logged-in .fixed-top {
 		top: 46px;
 	}
 }
@@ -1059,7 +1059,7 @@ button[type="submit"]:hover {
 
 /* Fix the top margin when logged in */
 @media screen and (max-width: 600px) {
-	.logged-in .navbar-fixed-top {
+	.logged-in .fixed-top {
 		top: 42px;
 	}
 }
