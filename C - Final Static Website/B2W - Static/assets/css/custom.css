@@ -316,6 +316,7 @@ form textarea {
 /* ==== LAYOUT ==== */
 
 .row + .row {
+	/*any row that comes immediately after a row*/
 	margin-top: 20px;
 }
 
